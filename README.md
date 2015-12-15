@@ -17,17 +17,17 @@ usefull, plugin include function
 - https://github.com/CISOfy/lynis/blob/master/include/functions#L186
 
 #header of the file
- PLUGIN_AUTHOR=name <name@email.com>
- PLUGIN_CATEGORY=what you want
- PLUGIN_DATE=date YYYY-MM-DD
- PLUGIN_DESC=Description
- PLUGIN_NAME=plugin name (use for the activation in the ../default.prf)
- PLUGIN_PACKAGE=all  (don't now)
- PLUGIN_REQUIRED_TESTS= (don't now)
- PLUGIN_VERSION=1.0.0 (version)
+PLUGIN_AUTHOR=name <name@email.com>
+PLUGIN_CATEGORY=what you want
+PLUGIN_DATE=date YYYY-MM-DD
+PLUGIN_DESC=Description
+PLUGIN_NAME=plugin name (use for the activation in the ../default.prf)
+PLUGIN_PACKAGE=all  (don't now)
+PLUGIN_REQUIRED_TESTS= (don't now)
+PLUGIN_VERSION=1.0.0 (version)
 
- Test        : PLGN-00XX (number to register plugin)
- Description : Description
+Test        : PLGN-00XX (number to register plugin)
+Description : Description
 
 #register your plugin
 use the Register function
