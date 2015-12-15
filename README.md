@@ -17,6 +17,7 @@ usefull, plugin include function
 - https://github.com/CISOfy/lynis/blob/master/include/functions#L186
 
 #header of the file
+```
 PLUGIN_AUTHOR=name <name@email.com>
 PLUGIN_CATEGORY=what you want
 PLUGIN_DATE=date YYYY-MM-DD
@@ -28,6 +29,7 @@ PLUGIN_VERSION=1.0.0 (version)
 
 Test        : PLGN-00XX (number to register plugin)
 Description : Description
+```
 
 #register your plugin
 use the Register function
