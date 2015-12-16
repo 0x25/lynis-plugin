@@ -15,12 +15,12 @@
 #-----------------------------------------------------
 #########################################################################
 #
-# Test        : PLGN-0011
+# Test        : CUST-0011
 # Description : Show network insformations and counters
-# plugin pahse1 (run at start, no output !)
-# plugin phase2 (run att the end)
+# plugin phase1 (run at start, no output ! collect data)
+# plugin phase2 (run att the end, show result)
 
-Register --test-no PLGN-0011 --preqs-met YES --weight L --network YES --description "Extend network insformations and counters"
+Register --test-no CUST-0011 --preqs-met YES --weight L --network YES --description "Extend network insformations and counters"
 
 # ------------------------------
 # Plugin configuration variables

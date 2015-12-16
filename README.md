@@ -10,8 +10,9 @@ first you need to clone an existing plugin. Check in /plugin folder, there are 2
 at the install (plugin_template_phase1 and plugin_pam_phase1) or you can check my ;)
 
 #need to now !
-script in sh not bash ! (sorry)  
-use _phase2 instead of _phase1 in the name of the plugin. phase1 is for plugin who do nothing (wtf) ... who do thing but show nothing :D
+script in sh not bash ! (sorry) If you want to use bash you need to check if /bin/bash is install first
+use _phase2 instead of _phase1. Phase 1 is for collecting data. Then normal tests run, and finally phase 2 of the plugins is executed. Phase 1 helps with collecting data used by tests. Phase 2 is for displaying things (like a report).If you want to add data to the /var/log/lynis-report.dat use the "report" function. In _phase2 you can grep data in this file.  
+active the plugin in the default.prf file  
 
 usefull, plugin include function   
 - https://github.com/CISOfy/lynis/blob/master/include/functions#L186
@@ -27,7 +28,7 @@ PLUGIN_PACKAGE=all  (don't now)
 PLUGIN_REQUIRED_TESTS= (don't now)
 PLUGIN_VERSION=1.0.0 (version)
 
-Test        : PLGN-00XX (number to register plugin)
+Test        : CUST-00XX (number to register plugin)
 Description : Description
 ```
 
@@ -36,9 +37,11 @@ use the Register function
 
 
 #in conclusion
-sh limiting the code ...   
+- sh limiting the code ... but you can use /bin/bash if you test it first.
+- create collect plugin (store data in the /vat/log/lynis-report.dat) (_phase1)  
+- create check plugin (can use lynis-report.dat) (_phase2)  
 
-a lot of usefull information is in the /var/log/lynis-report.dat  
+a lot of usefull information is in the /var/log/lynis-report.dat (and can be use in the _phase2 plugin) 
 
 
 #Screen 
