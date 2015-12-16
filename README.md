@@ -10,9 +10,9 @@ first you need to clone an existing plugin. Check in /plugin folder, there are 2
 at the install (plugin_template_phase1 and plugin_pam_phase1) or you can check my ;)
 
 #need to now !
-script in sh not bash ! (sorry) If you want to use bash you need to check if /bin/bash is install first
-use _phase2 instead of _phase1. Phase 1 is for collecting data. Then normal tests run, and finally phase 2 of the plugins is executed. Phase 1 helps with collecting data used by tests. Phase 2 is for displaying things (like a report).If you want to add data to the /var/log/lynis-report.dat use the "report" function. In _phase2 you can grep data in this file.  
-active the plugin in the default.prf file  
+Script in sh not bash ! (sorry) If you want to use bash you need to check if /bin/bash is install first.  
+Use _phase2 instead of _phase1. Phase 1 is for collecting data. Then normal tests run, and finally phase 2 of the plugins is executed. Phase 1 helps with collecting data used by tests. Phase 2 is for displaying things (like a report).If you want to add data to the /var/log/lynis-report.dat use the "report" function. In _phase2 you can grep data in this file.  
+Active the plugin in the default.prf file  
 
 usefull, plugin include function   
 - https://github.com/CISOfy/lynis/blob/master/include/functions#L186
