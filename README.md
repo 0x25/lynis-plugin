@@ -47,4 +47,4 @@ a lot of usefull information is in the /var/log/lynis-report.dat (and can be use
 #Screen 
 ![alt tag](https://cloud.githubusercontent.com/assets/8168679/11815492/40858c40-a34c-11e5-9e13-bb0d4daa172d.JPG)
 
-**22 and 3128 is for the exemple ;)**
+*22 and 3128 is for the exemple ;)*
